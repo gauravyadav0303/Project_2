@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair:ital,wght@1,300&family=Poppins:wght@100;200;300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link type="image/x-icon" rel="shortcut icon" href="images\favicon-32x32.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="font-ubuntu">
+    <section id="header">
+        <div class="max-w-screen mx-auto">
+            <nav class=" mx-auto flex items-center justify-between bg-white flex-wrap p-4 fixed w-full z-10 top-0">
+                <div class="flex items-center flex-shrink-0 text-white mr-6">
+                    <a class="text-black no-underline hover:no-underline" href="index.html">
+                        <img src="http://codespectsolution.com/static/media/brand_logo.3db802670c86066f39a4d817cc6860a9.svg" alt=""
+                            class="w-44 h-14 lg:ml-8">
+                    </a>
+                </div>
+
+                <div class="block lg:hidden">
+                    <button id="nav-toggle"
+                        class="flex items-center bg-black px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
+                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden pt-6 lg:pt-0" id="nav-content">
+                    <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                        <li class="mr-3">
+                            <button
+                                class="bg-white-500 border-2 border-black text-xl hover:bg-black hover:text-white text-black py-2 px-4 rounded-full duration-500 lg:mr-8">
+                                Contact Us
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </section>
+
+    <section id="hero" class="bg-[#f3f7fd]">
+        <div class="max-w-[84rem] mx-auto px-4 pt-16 pb-20 lg:px-10">
+            <div class="flex flex-col mx-auto mt-14 lg:flex-col lg:mt-10 ">
+                <h1 class="text-[60px] font-bold  lg:text-[100px] ">Hello There! </h1>
+                <form action="">
+                    <div class="flex flex-col my-12">
+                        <label for="name" class="font-semibold mb-4">I'm interested in....</label>
+                        <div class="space-x-2">
+                            <input type="checkbox" class="appearance-none">
+                            <button
+                                class="bg-white-500 border-2 border-black text-[15px] w-40 mb-4 hover:bg-black hover:text-white text-black py-2 px-4 rounded-full duration-500">Site
+                                from Scratch</button>
+                            <button
+                                class="bg-white-500 border-2 border-black text-[15px] w-40 mb-4 hover:bg-black hover:text-white text-black py-2 px-4 rounded-full duration-500">App
+                                from Scratch</button>
+                            <button
+                                class="bg-white-500 border-2 border-black text-[15px] w-40 mb-4 hover:bg-black hover:text-white text-black py-2 px-4 rounded-full duration-500">UI/UX
+                                design</button>
+                            <button
+                                class="bg-white-500 border-2 border-black text-[15px] w-40 mb-4 hover:bg-black hover:text-white text-black py-2 px-4 rounded-full duration-500">Branding</button>
+                            <button
+                                class="bg-white-500 border-2 border-black text-[15px] w-40 mb-4 hover:bg-black hover:text-white text-black py-2 px-4 rounded-full duration-500">Mobile
+                                development</button>
+                            <button
+                                class="bg-white-500 border-2 border-black text-[15px] w-40 mb-4 hover:bg-black hover:text-white text-black py-2 px-4 rounded-full duration-500">Web
+                                development</button>
+                            <button
+                                class="bg-white-500 border-2 border-black text-[15px] w-40 mb-4 hover:bg-black hover:text-white text-black py-2 px-4 rounded-full duration-500">Maintenance</button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col my-12">
+                        <label for="name" class="font-semibold">Name</label>
+                        <input type="text" id="name" placeholder="Enter Your Name"
+                            class="appearance-none mt-2 bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none bg-[#f3f7fd]">
+                        <div class="border border-slate-300"></div>
+                    </div>
+                    <div class="flex flex-col my-12">
+                        <label for="email" class="font-semibold">Email Address</label>
+                        <input type="text" id="email" placeholder="name@gmail.com"
+                            class="appearance-none mt-2 bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none bg-[#f3f7fd]">
+                        <div class="border border-slate-300"></div>
+                    </div>
+                    <div class="flex flex-col my-12">
+                        <label for="project" class="font-semibold">Tell us About Your Project</label>
+                        <input type="text" id="project" placeholder="Project Detail"
+                            class="appearance-none mt-2 bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none bg-[#f3f7fd]">
+                        <div class="border border-slate-300"></div>
+                    </div>
+                    <div class="flex flex-col my-12">
+                        <label for="name" class="font-semibold mb-4">Project Budget(USD)</label>
+                        <div class="space-x-4">
+                            <input type="checkbox" class="appearance-none">
+                            <button
+                                class="bg-white-500 border-2 border-black text-[15px] w-24 mb-4 hover:bg-black hover:text-white text-black py-2 px-4 rounded-full duration-500">10-20K</button>
+                            <button
+                                class="bg-white-500 border-2 border-black text-[15px] w-24 mb-4 hover:bg-black hover:text-white text-black py-2 px-4 rounded-full duration-500">20-30K</button>
+                            <button
+                                class="bg-white-500 border-2 border-black text-[15px] w-24 mb-4 hover:bg-black hover:text-white text-black py-2 px-4 rounded-full duration-500">30-40K</button>
+                            <button
+                                class="bg-white-500 border-2 border-black text-[15px] w-24 mb-4 hover:bg-black hover:text-white text-black py-2 px-4 rounded-full duration-500">50-100K</button>
+                            <button
+                                class="bg-white-500 border-2 border-black text-[15px] w-24 mb-4 hover:bg-black hover:text-white text-black py-2 px-4 rounded-full duration-500">^100K</button>
+
+                        </div>
+                    </div>
+                    <div class="flex flex-col my-12">
+                        <label class="block mb-4 text-sm font-medium text-gray-900" for="file_input">File Attachment</label>
+                        <input class="block w-full text-sm border border-gray-300 rounded-lg cursor-pointer bg-zinc-500 text-white focus:outline-none md:1/2 lg:w-1/4 " id="file_input" type="file" placeholder="File">
+                        <button type="submit" name="" id="" class="bg-white-500 border-2 border-black text-xl hover:bg-black hover:text-white text-black py-2 px-4 rounded-full duration-500 mt-12 w-1/2 lg:mr-8">
+                            Send Request
+                        </button>
+                    </div>
+                </form>
+<p class=" tracking-wide">
+    This site is protected by reCAPTCHA and the Google <span class="underline text-gray-400">Privacy Policy</span> and <span class="underline text-gray-400">Terms of Service</span> apply.
+</p>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="max-w-[84rem] mx-auto px-4 pt-16 pb-20 lg:px-0">
+            <div class="flex flex-col mx-auto lg:flex-row">
+
+                <img src="http://codespectsolution.com/static/media/brand_logo.3db802670c86066f39a4d817cc6860a9.svg" alt="" class="w-44 h-24 lg:mr-48">
+                <div class="flex flex-col">
+                    <h1 class="font-semibold text-xl mt-8 lg:mr-48">Company</h1>
+                     <i class="fa fa-phone mt-8 border-[1px] border-black w-12 h-12 p-4 rounded-full" aria-hidden="true"></i>
+                    <h1 class="font-semibold text-xl mt-2">Phone Number</h1>
+                    <h1 class="text-slate-600">+91 78747 12144</h1>
+                    <div class="lg:mr-48">
+                        <i class="fa fa-envelope mt-8 border-[1px] border-black w-12 h-12 p-4 rounded-full" aria-hidden="true"></i>
+                        <h1 class="font-semibold text-xl mt-2">Email us</h1>
+                        <h1 class="text-slate-600">info@codespectsolution.com</h1>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <h1 class="font-semibold text-xl mt-8">Location</h1>
+                    <h1 class="text-slate-600 lg:mt-4">400-Unique Square, Singanpore, Causeway-Link Road, Surat-395004,
+                        Gujarat,
+                        India</h1>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.244746645156!2d76.35877507618723!3d10.160750489953024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080587eea80439%3A0x2bfeb62837cd55dc!2sSaravana%20Bhavan%20Pure%20Veg.!5e0!3m2!1sen!2sin!4v1684905668821!5m2!1sen!2sin"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade "
+                        class="mt-6 h-96"></iframe>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <foooter id="copyright">
+        <div class="max-w-[84rem] mx-auto px-10 ">
+            <div class="border border-slate-300"></div>
+            <h1 class="text-center lg:my-4">Copyright © 2018 CodeSpect Solution | All Rights Reserved</h1>
+        </div>
+    </foooter>
+    <script>
+        //Javascript to toggle the menu
+        document.getElementById('nav-toggle').onclick = function () {
+            document.getElementById("nav-content").classList.toggle("hidden");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSpect</title>
+    <link type="image/x-icon" rel="shortcut icon" href="images\favicon-32x32.png" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair:ital,wght@1,300&family=Poppins:wght@100;200;300&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @keyframes slide {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .logos {
+            overflow: hidden;
+            padding: 60px 0;
+            background: white;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .logos:before,
+        .logos:after {
+            position: absolute;
+            top: 0;
+            width: 250px;
+            content: "";
+            z-index: 2;
+        }
+
+        .logos:before {
+            left: 0;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+        }
+
+        .logos:after {
+            right: 0;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+        }
+
+        .logos:hover .logos-slide {
+            animation-play-state: paused;
+        }
+
+        .logos-slide {
+            animation: 10s slide infinite linear;
+        }
+    </style>
+</head>
+
+<body class="font-ubuntu">
+    <section id="header">
+        <div class="max-w-screen mx-auto">
+            <nav class=" mx-auto flex items-center justify-between bg-white flex-wrap p-4 fixed w-full z-10 top-0">
+                <div class="flex items-center flex-shrink-0 text-white mr-6">
+                    <a class="text-black no-underline hover:no-underline" href="#">
+                        <img src="http://codespectsolution.com/static/media/brand_logo.3db802670c86066f39a4d817cc6860a9.svg" alt=""
+                            class="w-44 h-14 lg:ml-8">
+                    </a>
+                </div>
+
+                <div class="block lg:hidden">
+                    <button id="nav-toggle"
+                        class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
+                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden pt-6 lg:pt-0" id="nav-content">
+                    <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                        <li class="mr-3">
+                            <a href="contact.html">
+                                <button
+                                    class="bg-white-500 border-2 border-black text-xl hover:bg-black hover:text-white text-black py-2 px-4 rounded-full duration-500 lg:mr-8">
+                                    Contact Us
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </section>
+
+    <section id="hero" class="bg-[#F3EFEC]">
+        <div class="max-w-[84rem] mx-auto px-4 pt-16 pb-20 lg:px-10">
+            <img src="http://codespectsolution.com/static/media/brand_logo.3db802670c86066f39a4d817cc6860a9.svg" alt=""
+                class="mx-auto w-52 h-44 lg:w-66 lg:h-56 mt-4 mb-8 lg:float-right lg:mt-32 lg:w-[20rem]">
+            <div class="flex flex-col mx-auto -mt-10 lg:flex-col lg:mt-10 ">
+                <h1 class="text-[60px] font-bold  lg:text-[100px] ">Welcome</h1>
+                <p class="tracking-wide mt-4 text-left lg:pr-40">Codespect is a leading provider of IT
+                    support and services, catering to clients since 2018. Our expert team of IT engineers is committed
+                    to overcoming complex IT challenges and providing customized solutions that precisely align with
+                    your business needs. We take great pride in delivering unrivaled assistance and support to foster
+                    the success of your organization.</p>
+            </div>
+            <div class="flex flex-col mx-auto lg:flex-row lg:space-x-24 lg:mt-6">
+                <a href="#_" class="relative px-5 py-2 font-medium text-white group mt-6">
+                    <span
+                        class="absolute inset-0 w-1/2 lg:w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-purple-500 group-hover:bg-purple-700 group-hover:skew-x-12"></span>
+                    <span
+                        class="absolute inset-0 w-1/2 lg:w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-purple-700 group-hover:bg-purple-500 group-hover:-skew-x-12"></span>
+                    <span
+                        class="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-purple-600 -rotate-12"></span>
+                    <span
+                        class="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
+                    <span class="relative">Get Started</span>
+                </a>
+                <a href="#_" class="relative px-5 py-2 font-medium text-white group mt-6">
+                    <span
+                        class="absolute inset-0 w-1/2 lg:w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-purple-500 group-hover:bg-purple-700 group-hover:skew-x-12"></span>
+                    <span
+                        class="absolute inset-0 w-1/2 lg:w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-purple-700 group-hover:bg-purple-500 group-hover:-skew-x-12"></span>
+                    <span
+                        class="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-purple-600 -rotate-12"></span>
+                    <span
+                        class="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
+                    <span class="relative">Learn More</span>
+                </a>
+            </div>
+        </div>
+
+    </section>
+    <section id="swiper">
+        <div class="max-w-[84rem] flex flex-row mx-auto px-4 pt-16 pb-2 lg:px-10">
+
+            <div class="logos">
+                <div class="logos-slide">
+                    <div class="flex flex-row">
+                        <img src="http://codespectsolution.com/static/media/brandlogo4.a804d2dd8741acf64d4a.png" class="mr-16 h-10" />
+                        <img src="http://codespectsolution.com/static/media/brandlogo1.931fae6c82c4475993ea.png" class="mr-16 h-10" />
+                        <img src="http://codespectsolution.com/static/media/brandlogo2.fba5b3335d483c4dc136.png" class="mr-16 h-10" />
+                        <img src="http://codespectsolution.com/static/media/brandlogo5.e374ff5dc07451e6c122.png" class="mr-16 h-10" />
+                        <img src="http://codespectsolution.com/static/media/brandlogo6.436ab5c9fc42facd2539.png" class="mr-16 h-10" />
+                        <img src="http://codespectsolution.com/static/media/brandlogo8.16e85803a43bd1aa29b8.png" class="mr-16 h-10" />
+                        <img src="http://codespectsolution.com/static/media/brandlogo3.46b6ddd9c91e69e07f1c.png" class="mr-16 h-10" />
+                        <img src="http://codespectsolution.com/static/media/brandlogo6.436ab5c9fc42facd2539.png" class="mr-16 h-10" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="max-w-[84rem] mx-auto px-4 pt-16 pb-20 lg:px-10">
+            <h2 class="text-[20px] ">Our Services</h2>
+            <div class="border border-slate-300"></div>
+            <h3 class="text-[25px] lg:my-5">Servies That Our Experts Provide.</h3>
+            <div class="flex flex-col mx-auto lg:flex-row lg:mx-auto lg:space-x-4">
+                <div class="rounded-xl p-6 mx-auto my-2 bg-[#f8f8f7] lg:w-1/2 lg:h-1/2 lg:pb-16 ">
+                    <h1 class="text-[25px] font-semibold ">UI/UX</h1>
+                    <p class="text-[15px] mt-2 tracking-wide">UI (User Interface) design and UX (User Experience) design
+                        are two
+                        closely related fields that play a crucial role in creating effective digital products. A
+                        well-designed interface can make a product more attractive and engaging to users.</p>
+                </div>
+                <div class="rounded-xl p-6 mx-auto my-2 bg-[#def0eb] lg:pb-10 lg:w-1/2 lg:h-1/2">
+                    <h1 class="text-[25px] font-semibold">Web Development</h1>
+                    <p class="text-[15px] mt-2 tracking-wide">Web development is the creation of online sites and
+                        applications that
+                        people can access using the internet. This involves many different tasks, such as designing how
+                        a website looks, writing computer code to make it work, organizing and managing information
+                        stored in databases, and creating scripts that run on the server.</p>
+                </div>
+            </div>
+            <div class="flex flex-col mx-auto lg:flex-row lg:mx-auto lg:space-x-4 lg:mt-2">
+                <div class="rounded-xl p-6 mx-auto my-2 bg-[#f2e8df] lg:pb-12 lg:w-1/2 lg:h-1/2">
+                    <h1 class="text-[25px] font-semibold">IOS / Android</h1>
+                    <p class="text-[15px] mt-2 tracking-wide">iOS and Android are widely used mobile operating systems
+                        that power a
+                        large number of smartphones, tablets, and other portable devices. Both platforms have their own
+                        distinct features and abilities, making them highly popular choices among users worldwide.</p>
+                </div>
+                <div class="rounded-xl p-6 mx-auto my-2 bg-[#fff5ce] lg:w-1/2 lg:h-1/2">
+                    <h1 class="text-[25px] font-semibold">SEO / Marketing</h1>
+                    <p class="text-[15px] mt-2 tracking-wide">Both SEO (Search Engine Optimization) and marketing play
+                        crucial roles
+                        in the success of businesses in the online realm. SEO assists businesses in drawing increased
+                        natural traffic to their websites, whereas marketing aids in reaching a broader audience and
+                        effectively promoting their products or services.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section id="works" class="bg-[#F3EFEC]">
+
+        <div class="max-w-[84rem] mx-auto px-4 pt-20 pb-20 lg:px-10">
+            <h2 class="text-[20px] my-2">Our Works</h2>
+            <div class="border border-slate-300"></div>
+            <h3 class="text-[25px] my-2 lg:my-6">Recent Works.</h3>
+            <div class="flex flex-col mx-auto lg:flex-row lg:mx-auto lg:space-x-8">
+                <div class="bg-white rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 lg:w-1/2">
+                    <a href="#">
+                        <img class="rounded-t-lg " src="http://codespectsolution.com/static/media/noteefy.59190e7f5bd40299d147.png" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="https://noteefy.app/">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteefy.app
+                            </h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">The ultimate productivity tool that
+                            will revolutionize the way you organize and manage your notes. With its user-friendly
+                            interface and powerful features, Noteefy.app empowers you to take control of your
+                            information effortlessly.</p>
+                        <a href="#"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Read more
+                            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 lg:w-1/2">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="http://codespectsolution.com/static/media/orbofi.cce6982440e01db923ec.png" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">OrboFi.com
+                            </h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Your gateway to the future of
+                            finance. We're here to revolutionize the way you manage and grow your money. With our
+                            cutting-edge platform, you can take control of your financial journey like never before.</p>
+                        <a href="#"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Read more
+                            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col mx-auto lg:flex-row lg:mx-auto lg:space-x-8 lg:mt-8">
+                <div class="bg-white rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 lg:w-1/2">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="http://codespectsolution.com/static/media/shurooq.c563eb9a4576876274ed.png" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                Shurooq.gov.ae</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Your gateway to the vibrant
+                            opportunities offered by the Sharjah Investment and Development Authority. We're here to
+                            ignite your potential and help you thrive in one of the most dynamic business environments
+                            in the region.</p>
+                        <a href="#"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Read more
+                            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 lg:w-1/2">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="http://codespectsolution.com/static/media/elocker.816c462daaa59c750645.png" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">eLocker.com
+                            </h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Your ultimate solution for secure
+                            and convenient storage needs. We're here to simplify your life and provide you with peace of
+                            mind when it comes to storing your belongings.</p>
+                        <a href="#"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Read more
+                            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col mx-auto lg:flex-row lg:mx-auto lg:space-x-8 lg:mt-8">
+                <div class="bg-white rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 lg:w-1/2">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="http://codespectsolution.com/static/media/goblaq.4e4d34b8a13f81f51942.png" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Goblaq.com
+                            </h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Your ultimate solution for secure
+                            and convenient storage needs. We're here to simplify your life and provide you with peace of
+                            mind when it comes to storing your belongings.</p>
+                        <a href="#"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Read more
+                            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 lg:w-1/2">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="http://codespectsolution.com/static/media/custom-space.e86c08d904b2af3b8ab4.png"
+                            alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                CustomSpace.com</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Your ultimate solution for secure
+                            and convenient storage needs. We're here to simplify your life and provide you with peace of
+                            mind when it comes to storing your belongings.</p>
+                        <a href="#"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Read more
+                            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="approach">
+
+        <div class="max-w-[84rem] mx-auto px-4 pt-2 pb-20 lg:pt-10 lg:relative lg:px-10">
+            <h2 class="text-[20px] mb-6 ">An Effective Approach To Project Execution</h2>
+            <div class="border border-slate-300 mb-8"></div>
+            <div class="flex flex-col mx-auto lg:flex-row lg:mx-auto lg:space-x-4">
+                <div
+                    class="rounded-xl p-6 mx-auto my-2 bg-[#def0eb] lg:w-1/3 lg:h-[280px]  hover:border hover:border-blue-400 hover:shadow-lg duration-500 ">
+                    <h1 class="text-[25px] font-semibold ">Project Discovery</h1>
+                    <p class="text-[15px] mt-2 tracking-wide">Codepsect solution conducting a thorough project discovery
+                        phase, which involves understanding the client's objectives, requirements, and expectations.
+                        This step helps to establish clear project goals and ensures a shared understanding between the
+                        agency and the client.</p>
+                </div>
+                <div
+                    class="rounded-xl p-6 mx-auto my-2 bg-[#f3f7fd] lg:w-1/3 lg:h-[280px] hover:border hover:border-blue-400 hover:shadow-lg duration-500 ">
+                    <h1 class="text-[25px] font-semibold">Planning and Strategy</h1>
+                    <p class="text-[15px] mt-2 tracking-wide">Once the project goals are defined, We develops a
+                        comprehensive plan and strategy to achieve them. This includes outlining project timelines,
+                        allocating resources, defining deliverables, and establishing a project management framework.
+                    </p>
+                </div>
+                <div
+                    class="rounded-xl p-6 mx-auto my-2 bg-[#ecdeff] lg:w-1/3 lg:h-[280px] hover:border hover:border-blue-400 hover:shadow-lg duration-500 ">
+                    <h1 class="text-[25px] font-semibold">Design and Development</h1>
+                    <p class="text-[15px] mt-2 tracking-wide">In this step, Our team of experts designs and develops the
+                        required IT solutions, which could include software development, system integrations, database
+                        design, or website creation. The focus is on building robust, scalable, and user-friendly
+                        solutions aligned with the client's specific needs.</p>
+                </div>
+            </div>
+            <div class="flex flex-col mx-auto lg:flex-row lg:mx-auto lg:space-x-4">
+                <div
+                    class="rounded-xl p-6 mx-auto my-2 bg-[#fdf3f3] lg:w-1/3 lg:h-[320px] hover:border hover:border-blue-400 hover:shadow-lg duration-500   ">
+                    <h1 class="text-[25px] font-semibold ">Testing and Quality Assurance</h1>
+                    <p class="text-[15px] mt-2 tracking-wide">Before the final implementation, rigorous testing and
+                        quality assurance measures are conducted to identify and resolve any bugs, errors, or usability
+                        issues. This step ensures that the solutions are reliable, functional, and meet the required
+                        standards of performance and security.</p>
+                </div>
+                <div
+                    class="rounded-xl p-6 mx-auto my-2 bg-[#f2e8df] lg:w-1/3 lg:h-[320px] hover:border hover:border-blue-400 hover:shadow-lg duration-500 ">
+                    <h1 class="text-[25px] font-semibold">Implementation and Deployment</h1>
+                    <p class="text-[15px] mt-2 tracking-wide">Once the solutions have been thoroughly tested and
+                        approved, We proceeds with the implementation and deployment phase. This involves integrating
+                        the developed solutions into the client's existing IT infrastructure or launching new systems,
+                        ensuring a smooth transition and minimal disruption to business operations.</p>
+                </div>
+                <div
+                    class="rounded-xl p-6 mx-auto my-2 bg-[#fff5ce] lg:w-1/3 lg:h-[320px] hover:border hover:border-blue-400 hover:shadow-lg duration-500 ">
+                    <h1 class="text-[25px] font-semibold">Training and Support</h1>
+                    <p class="text-[15px] mt-2 tracking-wide">To enable seamless adoption of the new IT solutions, We
+                        provides comprehensive training and support to the client's team. This step ensures that users
+                        are equipped with the necessary skills and knowledge to effectively utilize the implemented
+                        solutions. Ongoing support is also provided to address any issues or concerns that may arise.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col mx-auto lg:flex-row lg:mx-auto lg:space-x-4 ">
+                <div
+                    class="rounded-xl p-6 my-2 bg-[#e8fdfd] lg:w-1/3 lg:h-[280px] hover:border hover:border-blue-400 hover:shadow-lg duration-500 ">
+                    <h1 class="text-[25px] font-semibold ">Monitoring and Evaluation</h1>
+                    <p class="text-[15px] mt-2 tracking-wide">After the project is implemented, We continues to monitor
+                        and evaluate the performance of the solutions. This allows for continuous improvement,
+                        optimization, and identification of areas where further enhancements or adjustments may be
+                        required.</p>
+                </div>
+            </div>
+            <div class="lg:mr-0 lg:ml-[26rem] lg:mt-8">
+                <h2 class="text-[20px] mb-6 lg:text-[30px] lg:mt-6">Elevating Digital Experiences: Inspiring Design
+                    Innovations for GOATS.</h2>
+                <div class="flex flex-col mx-auto lg:flex-row lg:mx-auto lg:space-x-2 lg:mt-2">
+                    <div class="rounded-xl p-2 mx-auto my-0 lg:w-1/2 lg:h-1/2">
+                        <p class="text-[15px] mt-2 tracking-wide lg:text-[17px]">We adopt a collaborative approach and
+                            aim to provide you with the finest design solutions through our team of experts. Our goal is
+                            to elevate digital experiences to new levels, offering design inspirations tailored
+                            specifically for GOATS.</p>
+                    </div>
+                    <div class="rounded-xl p-2 mx-auto my-0 lg:w-1/2 lg:h-1/2">
+                        <p class="text-[15px] mt-2 tracking-wide lg:text-[17px]">We employ a collaborative approach and
+                            are dedicated to assisting you with top-notch design solutions utilizing our team of skilled
+                            experts. Our aim is to raise the bar for digital experiences, providing design inspirations
+                            that cater specifically to GOATS.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col mx-auto lg:flex-row lg:mx-auto lg:space-x-2 lg:mt-2">
+                    <div class="rounded-xl p-2 mx-auto my-0 lg:w-1/2 lg:h-1/2">
+                        <p class="text-[15px] mt-2 tracking-wide lg:text-[17px]">Our methodology involves collaboration,
+                            and we are here to offer you the finest design solutions with the assistance of our team of
+                            professionals. Our focus is to take digital experiences to unprecedented heights, providing
+                            design inspirations tailored specifically for GOATS.</p>
+                    </div>
+                    <div class="rounded-xl p-2 mx-auto my-0 lg:w-1/2 lg:h-1/2">
+                        <p class="text-[15px] mt-2 tracking-wide lg:text-[17px]">We adopt a collaborative approach and
+                            are dedicated to assisting you with the best design solutions through our expert team. Our
+                            goal is to elevate digital experiences and provide new levels of design inspiration
+                            specifically tailored for GOATS.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team" class="bg-[#F3EFEC]">
+        <div class="max-w-[84rem] mx-auto px-4 pt-16 pb-20 lg:px-10">
+            <h2 class="text-[20px] ">Our Team</h2>
+            <div class="border border-slate-300"></div>
+            <h3 class="text-[25px] my-4 lg:my-8">Expert Team of Developers.</h3>
+            <div class="flex flex-col mx-auto lg:flex-row lg:mx-auto lg:space-x-6">
+                <div
+                    class="flex flex-col mt-4 p-6 shadow-lg rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 lg:w-1/3 lg:h-[300px]">
+
+                    <div class="space-y-4 divide-y divide-gray-700">
+                        <div class="my-2 ">
+                            <h2 class="text-[15px] mb-4 sm:text-base dark:text-gray-400">JOIN THE TEAM</h2>
+                            <p class="text-xl text-white mb-4 font-semibold sm:text-2xl">Want to Work Expert Team?</p>
+                            <p class="text-[15px] mb-4 sm:text-base dark:text-gray-400">We helped Hinders of, People in
+                                Growing Potentially.</p>
+                            <button
+                                class="bg-white-500 text-gray-400 border-2  mt-6 border-black text-xl hover:bg-black hover:text-white py-2 px-4 rounded-full duration-500 lg:mr-8">
+                                Contact Us
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col mt-4 justify-center p-6 shadow-lg rounded-xl sm:px-12 dark:bg-[#f2e8df] dark:text-gray-100 lg:w-1/3 lg:h-[300px]">
+                    <img src="http://codespectsolution.com/static/media/avatar1.291be4e69141f633bcf2.png" alt=""
+                        class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
+                    <div class="space-y-4 text-center divide-y divide-gray-700">
+                        <div class="my-2 space-y-1">
+                            <h2 class="text-xl text-black font-semibold sm:text-2xl">SHUBHAM LAKHANI</h2>
+                            <p class="px-5 text-xs sm:text-base dark:text-gray-400">CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col mt-4 justify-center p-6 shadow-lg rounded-xl sm:px-12 dark:bg-[#def0eb] dark:text-gray-100 lg:w-1/3 lg:h-[300px]">
+                    <img src="http://codespectsolution.com/static/media/avatar2.2f16525d4abf7624335a.png" alt=""
+                        class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
+                    <div class="space-y-4 text-center divide-y divide-gray-700">
+                        <div class="my-2 space-y-1">
+                            <h2 class="text-xl text-black font-semibold sm:text-2xl">SHUBHAM BAMBHAROLIYA</h2>
+                            <p class="px-5 text-xs sm:text-base dark:text-gray-400">CEO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col mx-auto mt-4 lg:flex-row lg:mx-auto lg:space-x-6">
+                <div
+                    class="flex flex-col mt-4 justify-center p-6 shadow-lg rounded-xl sm:px-12 dark:bg-[#fff5ce] dark:text-gray-100 lg:w-1/3 lg:h-[300px]">
+                    <img src="http://codespectsolution.com/static/media/avatar3.7a3aa91ebbb9b239f78f.png" alt=""
+                        class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
+                    <div class="space-y-4 text-center divide-y divide-gray-700">
+                        <div class="my-2 space-y-1">
+                            <h2 class="text-xl text-black font-semibold sm:text-2xl">ROSHNI KUMBHANI</h2>
+                            <p class="px-5 text-xs sm:text-base dark:text-gray-400">PROJECT MANAGER</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col mt-4 justify-center p-6 shadow-lg rounded-xl sm:px-12 dark:bg-[#ecdeff] dark:text-gray-100 lg:w-1/3 lg:h-[300px]">
+                    <img src="http://codespectsolution.com/static/media/avatar4.3bc9e86b0195ca17b366.png" alt=""
+                        class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
+                    <div class="space-y-4 text-center divide-y divide-gray-700">
+                        <div class="my-2 space-y-1">
+                            <h2 class="text-xl text-black font-semibold sm:text-2xl">DHRUVISHA MANGUKIYA</h2>
+                            <p class="px-5 text-xs sm:text-base dark:text-gray-400">UI UX DESIGNER</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col mt-4 justify-center p-6 shadow-lg rounded-xl sm:px-12 dark:bg-[#fdf3f3] dark:text-gray-100 lg:w-1/3 lg:h-[300px]">
+                    <img src="http://codespectsolution.com/static/media/avatar5.1d2fed5553cd88690420.png" alt=""
+                        class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
+                    <div class="space-y-4 text-center divide-y divide-gray-700">
+                        <div class="my-2 space-y-1">
+                            <h2 class="text-xl text-black font-semibold sm:text-2xl">DHYEYASHA KAPURIYA</h2>
+                            <p class="px-5 text-xs sm:text-base dark:text-gray-400">FRONT-END DEVELOPER</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col mx-auto mt-4 lg:flex-row lg:mx-auto lg:space-x-6">
+                <div
+                    class="flex flex-col mt-4 justify-center p-6 shadow-lg rounded-xl sm:px-12 dark:bg-[#def0eb] dark:text-gray-100 lg:w-1/3 lg:h-[300px]">
+                    <img src="http://codespectsolution.com/static/media/avatar8.152d0f0899072860dc90.png" alt=""
+                        class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
+                    <div class="space-y-4 text-center divide-y divide-gray-700">
+                        <div class="my-2 space-y-1">
+                            <h2 class="text-xl text-black font-semibold sm:text-2xl">MAITRY KAJAVADRA</h2>
+                            <p class="px-5 text-xs sm:text-base dark:text-gray-400">REACT-NATIVE DEVELOPER</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col mt-4 justify-center p-6 shadow-lg rounded-xl sm:px-12 dark:bg-[#f3f7fd] dark:text-gray-100 lg:w-1/3 lg:h-[300px]">
+                    <img src="http://codespectsolution.com/static/media/avatar7.f5384c5bf045d62386d9.png" alt=""
+                        class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
+                    <div class="space-y-4 text-center divide-y divide-gray-700">
+                        <div class="my-2 space-y-1">
+                            <h2 class="text-xl text-black font-semibold sm:text-2xl">RUCHITA GEVARIYA</h2>
+                            <p class="px-5 text-xs sm:text-base dark:text-gray-400">REACT-JS DEVELOPER</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col mt-4 justify-center p-6 shadow-lg rounded-xl sm:px-12 dark:bg-[#f2e8df] dark:text-gray-100 lg:w-1/3 lg:h-[300px]">
+                    <img src="http://codespectsolution.com/static/media/avatar8.152d0f0899072860dc90.png" alt=""
+                        class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
+                    <div class="space-y-4 text-center divide-y divide-gray-700">
+                        <div class="my-2 space-y-1">
+                            <h2 class="text-xl text-black font-semibold sm:text-2xl">RAJVEE JIVANI</h2>
+                            <p class="px-5 text-xs sm:text-base dark:text-gray-400">REACT-JS DEVELOPER</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col mx-auto mt-4 lg:flex-row lg:mx-auto lg:space-x-8">
+                <div
+                    class="flex flex-col mt-4 justify-center p-6 shadow-lg rounded-xl sm:px-12 dark:bg-[#fdf3f] dark:text-gray-100 lg:w-1/3 lg:h-[300px]">
+                    <img src="http://codespectsolution.com/static/media/avatar9.a2cb5bf492256f1209ce.png" alt=""
+                        class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
+                    <div class="space-y-4 text-center divide-y divide-gray-700">
+                        <div class="my-2 space-y-1">
+                            <h2 class="text-xl text-black font-semibold sm:text-2xl">SHIVANI SAVALIYA</h2>
+                            <p class="px-5 text-xs sm:text-base dark:text-gray-400">WORDPRESS DEVELOPER</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col mt-4 justify-center p-6 shadow-lg rounded-xl sm:px-12 dark:bg-[#ecdeff] dark:text-gray-100 lg:w-1/3 lg:h-[300px]">
+                    <img src="http://codespectsolution.com/static/media/avatar10.5436d4aa4a421209e861.png" alt=""
+                        class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
+                    <div class="space-y-4 text-center divide-y divide-gray-700">
+                        <div class="my-2 space-y-1">
+                            <h2 class="text-xl text-black font-semibold sm:text-2xl">JASH VANANI</h2>
+                            <p class="px-5 text-xs sm:text-base dark:text-gray-400">ANDROID DEVELOPER</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col mt-4 justify-center p-6 shadow-lg rounded-xl sm:px-12 dark:bg-[#fff5ce] dark:text-gray-100 lg:w-1/3 lg:h-[300px]">
+                    <img src="http://codespectsolution.com/static/media/avatar11.28647ed6fa5c02935550.png" alt=""
+                        class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
+                    <div class="space-y-4 text-center divide-y divide-gray-700">
+                        <div class="my-2 space-y-1">
+                            <h2 class="text-xl text-black font-semibold sm:text-2xl">NEEL SAVANI</h2>
+                            <p class="px-5 text-xs sm:text-base dark:text-gray-400">IOS DEVELOPER</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="lg:mt-32">
+        <div class="max-w-[84rem] mx-auto px-4 pt-16 pb-20 bg-[#def0eb] lg:px-10">
+            <h2 class="text-[20px] lg:pl-8 ">CONTACT</h2>
+            <div class="lg:flex-row lg:ml-56 lg:pr-10">
+                <h3 class="text-[25px] my-2 lg:my-4 lg:text-[75px]">Let's design your dream projects with Expert Team
+                </h3>
+                <p class="text-[15px] my-6 tracking-wide lg:text-[20px] lg:tracking-wide lg:pr-20 lg:mt-10">WonCurious
+                    about our process and how we build
+                    brands with our strategy? Let's talk! Request a consultation today and discover the secrets to our
+                    success. Get ready to unleash your business's potential.</p>
+                <div class="flex flex-col mx-auto lg:flex-row lg:space-x-24 lg:mt-8">
+                    <a href="#_" class="relative px-5 py-2 font-medium text-white group mt-6">
+                        <span
+                            class="absolute inset-0 w-1/2 h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-purple-500 group-hover:bg-purple-700 group-hover:skew-x-12 lg:w-full"></span>
+                        <span
+                            class="absolute inset-0 w-1/2 h-full transition-all duration-300 ease-out transform skew-x-12 bg-purple-700 group-hover:bg-purple-500 group-hover:-skew-x-12 lg:w-full"></span>
+                        <span
+                            class="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-purple-600 -rotate-12"></span>
+                        <span
+                            class="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
+                        <span class="relative ">Get in Touch</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="footer">
+        <div class="max-w-[84rem] mx-auto px-4 pt-16 pb-20 lg:px-0">
+            <div class="flex flex-col mx-auto lg:flex-row">
+
+                <img src="http://codespectsolution.com/static/media/brand_logo.3db802670c86066f39a4d817cc6860a9.svg" alt="" class="w-44 h-24 lg:mr-48">
+                <div class="flex flex-col">
+                    <h1 class="font-semibold text-xl mt-8 lg:mr-48">Company</h1>
+                    <i class="fa fa-phone mt-8 border-[1px] border-black w-12 h-12 p-4 rounded-full"
+                        aria-hidden="true"></i>
+                    <h1 class="font-semibold text-xl mt-2">Phone Number</h1>
+                    <h1 class="text-slate-600">+91 78747 12144</h1>
+                    <div class="lg:mr-48">
+                        <i class="fa fa-envelope mt-8 border-[1px] border-black w-12 h-12 p-4 rounded-full"
+                            aria-hidden="true"></i>
+                        <h1 class="font-semibold text-xl mt-2">Email us</h1>
+                        <h1 class="text-slate-600">info@codespectsolution.com</h1>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <h1 class="font-semibold text-xl mt-8">Location</h1>
+                    <h1 class="text-slate-600 lg:mt-4">400-Unique Square, Singanpore, Causeway-Link Road, Surat-395004,
+                        Gujarat,
+                        India</h1>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.244746645156!2d76.35877507618723!3d10.160750489953024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080587eea80439%3A0x2bfeb62837cd55dc!2sSaravana%20Bhavan%20Pure%20Veg.!5e0!3m2!1sen!2sin!4v1684905668821!5m2!1sen!2sin"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade "
+                        class="mt-6 h-96"></iframe>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <foooter id="copyright">
+        <div class="max-w-[84rem] mx-auto px-10 ">
+            <div class="border border-slate-300"></div>
+            <h1 class="text-center lg:my-4">Copyright © 2018 CodeSpect Solution | All Rights Reserved</h1>
+        </div>
+    </foooter>
+    <script>
+        //Javascript to toggle the menu
+        document.getElementById('nav-toggle').onclick = function () {
+            document.getElementById("nav-content").classList.toggle("hidden");
+        }
+    </script>
+</body>
+
+</html>
